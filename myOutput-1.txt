@@ -1,0 +1,62 @@
+Test 1: Testing +, =, and changeCoefficient
+
+p1 = 4x^4 - 3.8x^3 + 2.2x^2 + x 
+p1 = 4x^4 - 3.8x^3 + x 
+p2 = 4x^4 - 3.8x^3 + x 
+p2 = 4x^4 - 3.8x^3 + 9.5x^2 + x 
+p3 = 8x^4 - 7.6x^3 + 9.5x^2 + 2x
+p4 = 4x^5 + 3x^4 + 7x^3 + 2x^2 + x 
+p5 = 4x^5 + 11x^4 - 0.6x^3 + 11.5x^2 + 3x
+p5 = 4x^4 - 3.8x^3 + x 
+
+---------------------------------
+Test 2: += and -= when size is less than or equal to p.size
+
+p1 = 4.4x^4 - 4.4x^3 + 4.2x^2 + 4.4x
+p2 = -5.6x^4 + 5.6x^3 + 5.6x^2 + 5.6x
+p1 = -1.2x^4 + 1.2x^3 + 9.8x^2 + 10x
+p3 = 12x^4 - 15x^2 + 14x
+p3 = 17.6x^4 + 5.6x^3 - 20.6x^2 + 8.4x
+
+---------------------------------
+Test 3: += and -= operator testing when size is larger than p.size
+
+p1 = -3.3x^4 + 4.5x^3 + 9x^2 + 7x
+p2 = -3.4x^3 + 6.5x^2
+p1 = -3.3x^4 - 3.4x^3 + 6.5x^2 + 7x
+p3 = 12x^3 + 7x^2
+p1 = -3.3x^4 - 15.4x^3 - 0.5x^2 + 7x
+
+---------------------------------
+Test 4: The == operator
+
+p1 = -3.3x^4 + 4.5x^3 + 9x^2 + 7x
+p2 = -3.3x^4 + 4.5x^3 + 9x^2 + 7x
+-----p1 and p2 are the same
+p3 = 3x^4 + 1.4x^3 - 9x^2 - 6x
+p4 = -5x^15 + 3x^4 + 1.4x^3 - 9x^2 - 6x
+-----p3 and p4 are not the same
+p5 = 3x^4 + 1.4x^3 - 9x^2 - 6x
+p6 = 3x^4 + x^3 - 9x^2 - 6x
+-----p5 and p6 are not the same
+p7 = -9x^5 + x^3 + 3x^2 - 6x
+p8 = -9x^5 + 3x^4 + x^3 - 6x
+-----p7 and p8 are not the same
+
+---------------------------------
+Test 5: Testing the !=  
+
+p1 = -3.3x^4 + 4.5x^3 + 9x^2 + 7x
+p2 = -3.3x^4 + 4.5x^3 + 9x^2 + 7x
+-----p1 and p2 are the same
+p3 = 3x^4 + 1.4x^3 - 9x^2 - 6x
+p4 = -5x^15 + 3x^4 + 1.4x^3 - 9x^2 - 6x
+-----p3 and p4 are not the same
+p5 = 3x^4 + 1.4x^3 - 9x^2 - 6x
+p6 = 3x^4 + x^3 - 9x^2 - 6x
+-----p5 and p6 not the same
+p7 = -9x^5 + x^3 + 3x^2 - 6x
+p8 = -9x^5 + 3x^4 + x^3 - 6
+-----p7 and p8 are not the same
+
+---------------------------------
